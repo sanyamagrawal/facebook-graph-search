@@ -106,7 +106,7 @@ var app = (function(windowScope) {
                 tr.style.height = 40 + "px";
                 anode = document.createElement("a");
                 anode.setAttribute("id", page.id);
-                anode.setAttribute("href", "#");
+                anode.setAttribute("href", "javascript:void(0)");
                 anode.innerHTML = page.name;
                 anode.addEventListener("click", getPageDetail);
 
@@ -228,20 +228,16 @@ var app = (function(windowScope) {
 
     /* API To get Page Details of a Specific page based on which page has been clicked*/
     function getPageDetail(event) {
-        var pageId = event.target.id;
-        if (nodeDetailId && nodeDetailId.id === pageId) {
+        var pageElement = event.target,
+            pageId = pageElement.id,
+            detailsShown;
+
+        detailsShown = pageElement.getAttribute("data-details-shown");
+        if (detailsShown) {
             return false;
-        }
-        cleanupPreviousDetail(nodeDetailId);
-        nodeDetailId = event.target;
-        getDetailResult(event, pageId);
-        return false;
-    }
-
-    /* Close the previously shown detail. Required so that the data doesnt show up 2 times .*/
-    function cleanupPreviousDetail(node) {
-        if (node) {
-
+        } else {
+            pageElement.setAttribute("data-details-shown", true);
+            getDetailResult(event, pageId);
         }
     }
 
