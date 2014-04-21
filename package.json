@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/sanyamagrawal/facebook-graph-search/issues"
   },
-  "homepage": "https://github.com/sanyamagrawal/facebook-graph-search"
+  "homepage": "https://github.com/sanyamagrawal/facebook-graph-search",
+  "engines": {
+    "node": "0.10.x"
+  }
+
 }
