@@ -1,0 +1,26 @@
+{
+  "name": "facebook-graph-search",
+  "version": "0.0.0",
+  "description": "This is Facebook Graph Search Without using any javascript library",
+  "main": "web-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sanyamagrawal/facebook-graph-search.git"
+  },
+  "keywords": [
+    "facebookgraphapi",
+    "nolibjavascript",
+    "graphapi",
+    "graphsearch",
+    "fbpagesearch"
+  ],
+  "author": "Sanyam Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanyamagrawal/facebook-graph-search/issues"
+  },
+  "homepage": "https://github.com/sanyamagrawal/facebook-graph-search"
+}
