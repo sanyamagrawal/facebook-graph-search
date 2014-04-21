@@ -1,0 +1,139 @@
+/* Start Of Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*END OF RESET CSS*/
+
+html, body {
+  overflow-x: auto;
+  overflow-y: scroll;
+  width: 100%;
+
+  font-family: "HelveticaNeue-Roman", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+}
+
+body {
+  height: 100%;
+  font-size: 1.3rem;
+  color: #404040;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color : #999;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+body .width100Percentage {
+  width: 100%;
+}
+
+body .fixedPosition {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 900;
+}
+
+body .centerAligned {
+  text-align: center;
+}
+
+body .table {
+  display: table;
+  table-layout: fixed;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body .tableCell {
+  display: table-cell;
+  vertical-align: top;
+}
+
+body .tableRow {
+  display: table-row;
+  vertical-align: top;
+}
+
+body .hide {
+  display: none;
+}
+
+body .show {
+  display: block;
+}
+
+body .inlineBlock {
+  display: inline-block;
+}
+
+body .floatLeft {
+  float: left;
+}
+
+body .floatRight {
+  float: right;
+}

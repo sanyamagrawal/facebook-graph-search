@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            FaceBook Page Search Using Facebook Graph Search
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="../styles/root.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link rel="stylesheet" type="text/css" href="../styles/elements.css">
+        <link rel="stylesheet" type="text/css" href="../styles/button.css">
+
+        <script type="text/javascript" src="../scripts/FBSDK.js"></script>
+        <script type="text/javascript" src="../scripts/customsort.js"></script>
+        <script type="text/javascript" src="../scripts/main.js"></script>
+    </head>
+
+    <body>
+        <div id="fb-root"></div>
+
+        <div class="searchBar width100Percentage fixedPosition centerAligned">
+            <h3 class="inlineBlock floatLeft">Facebook Page Search </h3>
+            <div class="inlineBlock">
+                <input id="fbSearchTextBox" class="searchBox" onkeypress="app.handleKeyPress(event)" type="text" placeHolder="Enter Text To Search For FB Pages" />
+                <input type="button" class="primary" value="Search" onclick="app.showResults(); return false;" />
+            </div>
+        </div>
+
+        <div id="errorDiv" class="errorDiv hide"></div>
+
+        <div class="table width100Percentage mainContainer">
+            <div class="searchList tableCell">
+                <h3>Search List</h3>
+                <table class="table">
+                <thead>
+                    <tr>
+                        <td>Page Name</td>
+                        <td>Page Catagory</td>
+                        <td>Favourite Status</td>
+                    </tr>
+                </thead>
+                <tbody id="searchListBox">
+                    <tr>
+                        <td colspan="3" class="noData centerAligned">No data to show</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <div class="favouriteList tableCell">
+                <h3>Favourite List</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Page Name</td>
+                            <td>Page Catagory</td>
+                        </tr>
+                    </thead>
+                    <tbody id="favouriteListBox">
+                        <tr>
+                            <td colspan="2" class="noData centerAligned">You havent Favorited Any Facebook Page</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="button" class="inlineBlock" value="List Favourite"onclick="app.showFavouriteList(); return false;" />
+            </div>
+        </div>
+
+    </body>
+</html>
