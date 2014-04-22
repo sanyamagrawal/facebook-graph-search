@@ -21,8 +21,7 @@
 var app = (function(windowScope) {
 
     var favouriteList = [],
-        accessToken = "112236402217273|W2sfTkrLWBDkQlFrm17BRH-hNUM",
-        nodeDetailId = null;
+        accessToken = "112236402217273|W2sfTkrLWBDkQlFrm17BRH-hNUM";
 
     /*
      * Handling Key Press on Search Field. We want to start the search as soon as the user press Enter
@@ -167,7 +166,7 @@ var app = (function(windowScope) {
         }
 
         hideErrorDiv();
-        setFabButton(event.srcElement, !state);
+        setFabButton(event.target, !state);
         showFavouriteList();
     }
 
@@ -316,3 +315,10 @@ var app = (function(windowScope) {
         handleKeyPress: handleKeyPress
     };
 })(this);
+
+window.addEventListener('DOMContentLoaded', load2, false);
+
+
+function load2() {
+    debugger;
+}
